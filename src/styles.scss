@@ -5,3 +5,54 @@ html, body {
 
   height: 100%;
 }
+@import "~bootstrap-css-only/css/bootstrap.min.css";
+@import "./assets/fonts/mitr.css";
+@import "~font-awesome/css/font-awesome.css";
+
+@import url("https://fonts.googleapis.com/icon?family=Material+Icons");
+// MATERIAL THEME
+// @import "~@angular/material/prebuilt-themes/deeppurple-amber.css";
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+// @import "~@angular/material/prebuilt-themes/purple-green.css";
+// @import "~@angular/material/prebuilt-themes/pink-bluegrey.css";
+
+
+h1, h2, h3, h4, h5{
+  font-family: 'Mitr';
+  margin-top:10px;
+}
+h1{
+  font-size: 22px;
+  margin-top:20px;
+}
+
+// default preloader
+.preloader {
+  width: 40px;
+  height: 40px;
+  margin: 100px auto;
+  background-color: #333;
+
+  border-radius: 100%;  
+  -webkit-animation: sk-scaleout 1.0s infinite ease-in-out;
+  animation: sk-scaleout 1.0s infinite ease-in-out;
+}
+
+@-webkit-keyframes sk-scaleout {
+  0% { -webkit-transform: scale(0) }
+  100% {
+    -webkit-transform: scale(1.0);
+    opacity: 0;
+  }
+}
+
+@keyframes sk-scaleout {
+  0% { 
+    -webkit-transform: scale(0);
+    transform: scale(0);
+  } 100% {
+    -webkit-transform: scale(1.0);
+    transform: scale(1.0);
+    opacity: 0;
+  }
+}
